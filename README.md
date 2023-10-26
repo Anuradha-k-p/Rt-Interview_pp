@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+### Q1 . what is SPA?
+ANS- spa stands for single page application, it is web site application or website thats load a single HTML page and dynamically update its content without relaod full page
+### Q2. what is virtual Dom.
+In React, the Virtual DOM is a programming concept and abstraction that represents a lightweight copy of the actual DOM (Document Object Model) of a web application. It's a way to optimize and efficiently manage updates to the actual DOM.
+### Q3. difference between class component and functional component.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+|function component|class component|
+|----|----|
+|Functional components are defined as JavaScript functions that return JSX. |Class components are defined as ES6 classes that extend the React.Component class. They require the use of the render method to return the JSX that represents the component's UI|
+| React Hooks, you can now use the useState hook to manage component state within functional components.|Class components can manage component state using this.state and this.setState() to update the state. |
+|Functional components used to lack lifecycle methods. However, with hooks like useEffect, you can achieve similar functionality to lifecycle methods in functional components. Hooks allow you to perform side effects, such as data fetching and subscribing to changes, in functional components.|Class components have access to a variety of lifecycle methods, such as componentDidMount, componentDidUpdate, componentWillUnmount, etc., which allow you to control component behavior at different stages of its lifecycle.|
 
-## Available Scripts
+### Q4. what is Package.json.
+A package.json file is a configuration file used in Node.js and JavaScript-based projects to define various aspects of the project, including its metadata, dependencies, scripts, and other settings. It is a fundamental part of the Node.js ecosystem and is commonly used in web development and other JavaScript projects to manage project dependencies and scripts. The package.json file is written in JSON (JavaScript Object Notation) format.
 
-In the project directory, you can run:
+it contains-
+1.dependancies.
+2.scripts.
+3.repository information.
+4.project data.
 
-### `npm start`
+### Q5. What is JSX and why do we use it instead of js?
+JSX, which stands for JavaScript XML, is a syntax extension for JavaScript commonly used with React, a popular JavaScript library for building user interfaces. JSX allows developers to write HTML-like code within JavaScript, making it easier to create and manage the user interface of a web application.
+ * advantages-
+ -declartive sntence.
+ -component Composition
+ -tool Support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Q6. What is the Difference between react and react native? Which one is library or framework?
+|React js| React Native|
+|----|----|
+|React is a JavaScript library|React Native is a framework.|
+|React is primarily used for building web applications.|React Native is designed for building mobile applications|
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Q7.Difference b/w Stateful and stateless Component.
+|Stateful | stateless|
+|----|----|
+|Stateful components, also known as class components|Stateless components, also known as functional components,|
+| Stateful components can utilize React's lifecycle methods|Stateless components don't have access to React's lifecycle methods.|
+|Stateful components use the this keyword to access props, state, and class methods|Stateless components are defined as JavaScript functions that take props as an argument and return JSX. They do not use the this keyword.|
 
-### `npm test`
+### Q8. What do you know about NPM?
+npm (Node Package Manager) is a widely used package manager for JavaScript and Node.js applications. It plays a crucial role in managing dependencies, scripts, and various aspects of a JavaScript project. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+used for--
+1.installation.
+2.Dependancies mangament.
+3.Script.
+4.version control
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### differnce between props and state
+|prop|state|
+|----|----|
+|prps are used to send data from one compo to anthother compo|state is a object that represnts the internal variable|
+|props cant modified| it is possible to modifiy state|
+|props used in class bassed and function based compo| state is used in class based compo|
+|propa are passed outside the function| states are passed inside function|
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
